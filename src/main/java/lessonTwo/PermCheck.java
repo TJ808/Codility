@@ -5,12 +5,12 @@ public class PermCheck {
 	public int solution(int [] A) {
 		
 		int size = A.length;
-		int [] counter = new int[size + 1];
+		int [] counter = new int[size];
 		
 		for(int i = 0; i < size; ++i) {
 
-			if(A[i] <= size && counter[ A[i] ] == 0) {
-				counter[ A[i] ] = 1;
+			if(A[i] <= size && counter[ A[i] - 1] == 0) {
+				counter[ A[i] - 1] = 1;
 			}
 			else {
 				return 0;
