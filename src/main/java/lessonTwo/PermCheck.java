@@ -19,7 +19,7 @@ public class PermCheck {
 			must start with 1. If an elements value is greater than the number of 
 			elements in the array, a permutation is not possible. The second check
 			makes sure each element only appears once. If it appears more than once
-			it is not a permutation */
+			it is not a permutation */ 
 			
 			if(A[i] <= size && counter[ A[i] - 1] == 0) {
 				counter[ A[i] - 1] = 1;
